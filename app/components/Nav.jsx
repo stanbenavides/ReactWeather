@@ -14,6 +14,7 @@ var {Link, IndexLink} = require("react-router");
 //   }
 // });
 
+//  Use Arrows to refactor above
 var Nav = () => {
   return (
     <div>

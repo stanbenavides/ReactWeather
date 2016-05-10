@@ -24816,6 +24816,8 @@
 	//   }
 	// });
 
+	//  Use Arrows to refactor above
+
 	var Nav = function Nav() {
 	  return React.createElement(
 	    "div",
