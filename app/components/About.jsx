@@ -11,7 +11,7 @@ var React = require("react");
 // use of arrows to replace above function code
 var About = (props) => {
   return (
-    <h3>About Component</h3>
+    <h3>About</h3>
   )
 };
 
