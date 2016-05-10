@@ -10,9 +10,13 @@ var React = require("react");
 
 // use of arrows to replace above function code
 var About = (props) => {
-  return (
-    <h3>About</h3>
-  )
+    return (
+        <div>
+            <h3>About</h3>
+            <p>Welcome to the About page</p>
+        </div>
+
+    )
 };
 
 module.exports = About;

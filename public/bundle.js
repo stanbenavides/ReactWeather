@@ -26226,11 +26226,20 @@
 
 	// use of arrows to replace above function code
 	var About = function About(props) {
-	  return React.createElement(
-	    "h3",
-	    null,
-	    "About"
-	  );
+	    return React.createElement(
+	        "div",
+	        null,
+	        React.createElement(
+	            "h3",
+	            null,
+	            "About"
+	        ),
+	        React.createElement(
+	            "p",
+	            null,
+	            "Welcome to the About page"
+	        )
+	    );
 	};
 
 	module.exports = About;
@@ -26263,7 +26272,7 @@
 	    React.createElement(
 	      "p",
 	      null,
-	      "Welcome to examples page!"
+	      "Welcome to Examples page!"
 	    )
 	  );
 	};
