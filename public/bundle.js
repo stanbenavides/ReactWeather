@@ -24820,30 +24820,20 @@
 	var React = __webpack_require__(8);
 	var Nav = __webpack_require__(224);
 
-	// var Main = React.createClass({
-	//   render: function () {
-	//     return (
-	//       <div>
-	//         <Nav/>
-	//         <h2>Main Component</h2>
-	//         {this.props.children}
-	//       </div>
-	//     );
-	//   }
-	// });
-
-	// Use of Arrows to replace above code
 	var Main = function Main(props) {
 	  return React.createElement(
 	    "div",
 	    null,
 	    React.createElement(Nav, null),
 	    React.createElement(
-	      "h2",
-	      null,
-	      "Main Component"
-	    ),
-	    props.children
+	      "div",
+	      { className: "row" },
+	      React.createElement(
+	        "div",
+	        { className: "columns medium-6 large-4 small-centered" },
+	        props.children
+	      )
+	    )
 	  );
 	};
 
@@ -24899,7 +24889,7 @@
 	            null,
 	            React.createElement(
 	              Link,
-	              { to: "/", activeClassName: "active", activeStyle: { fontWeight: "bold" } },
+	              { to: "/about", activeClassName: "active", activeStyle: { fontWeight: "bold" } },
 	              "About"
 	            )
 	          ),
@@ -24908,7 +24898,7 @@
 	            null,
 	            React.createElement(
 	              Link,
-	              { to: "/", activeClassName: "active", activeStyle: { fontWeight: "bold" } },
+	              { to: "/examples", activeClassName: "active", activeStyle: { fontWeight: "bold" } },
 	              "Examples"
 	            )
 	          )
@@ -26311,30 +26301,21 @@
 
 	var React = __webpack_require__(8);
 
-	// var About = React.createClass({
-	//   render: function () {
-	//     return (
-	//       <h3>About Component</h3>
-	//     )
-	//   }
-	// });
-
-	// use of arrows to replace above function code
 	var About = function About(props) {
-	    return React.createElement(
-	        "div",
-	        null,
-	        React.createElement(
-	            "h3",
-	            null,
-	            "About"
-	        ),
-	        React.createElement(
-	            "p",
-	            null,
-	            "Welcome to the About page"
-	        )
-	    );
+	  return React.createElement(
+	    "div",
+	    null,
+	    React.createElement(
+	      "h3",
+	      null,
+	      "About"
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "Welcome to the About page"
+	    )
+	  );
 	};
 
 	module.exports = About;
@@ -26347,27 +26328,46 @@
 
 	var React = __webpack_require__(8);
 
-	// var Examples = React.createClass({
-	//   render: function () {
-	//     return (
-	//       <h3>Examples Component</h3>
-	//     )
-	//   }
-	// });
+	var _require = __webpack_require__(166);
+
+	var Link = _require.Link;
+
 
 	var Examples = function Examples(props) {
 	  return React.createElement(
 	    "div",
 	    null,
 	    React.createElement(
-	      "h3",
-	      null,
+	      "h1",
+	      { className: "text-center" },
 	      "Examples"
 	    ),
 	    React.createElement(
 	      "p",
 	      null,
-	      "Welcome to Examples page!"
+	      "Here are a few example locations to try:"
+	    ),
+	    React.createElement(
+	      "ol",
+	      null,
+	      React.createElement(
+	        "li",
+	        null,
+	        React.createElement(
+	          "link",
+	          { to: "/?location=Lancaster" },
+	          "Lancaster, PA"
+	        )
+	      ),
+	      React.createElement(
+	        "li",
+	        null,
+	        React.createElement(
+	          "link",
+	          { to: "/?location=New York" },
+	          "New York, NY"
+	        )
+	      )
 	    )
 	  );
 	};
