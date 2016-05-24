@@ -24979,7 +24979,7 @@
 	      if (isLoading) {
 	        return React.createElement(
 	          "h3",
-	          null,
+	          { className: "text-center" },
 	          " Fetching weather..."
 	        );
 	      } else if (temp && location) {
@@ -24991,9 +24991,9 @@
 	      "div",
 	      null,
 	      React.createElement(
-	        "h3",
-	        null,
-	        "Weather Component"
+	        "h1",
+	        { className: "text-center" },
+	        "Get Weather"
 	      ),
 	      React.createElement(WeatherForm, { onSearch: this.handleSearch }),
 	      renderMessage()
@@ -25035,7 +25035,7 @@
 	        React.createElement("input", { type: "text", ref: "location" }),
 	        React.createElement(
 	          "button",
-	          null,
+	          { className: "button expanded hollow" },
 	          "Get Weather"
 	        )
 	      )
@@ -25053,19 +25053,6 @@
 
 	var React = __webpack_require__(8);
 
-	// var WeatherMessage = React.createClass({
-	//   render: function() {
-	//     var {temp, location} = this.props;
-	//
-	//     return (
-	//       <div>
-	//         <h3>The temperature in {location} is:</h3>
-	//         <p>{temp}</p>
-	//       </div>
-	//       )
-	//     }
-	//   });
-
 	var WeatherMessage = function WeatherMessage(_ref) {
 	  var temp = _ref.temp;
 	  var location = _ref.location;
@@ -25075,15 +25062,20 @@
 	    null,
 	    React.createElement(
 	      "h3",
-	      null,
-	      "The temperature in ",
+	      { className: "text-center" },
+	      "The temperature in",
+	      React.createElement("br", null),
 	      location,
 	      " is:"
 	    ),
 	    React.createElement(
-	      "p",
-	      null,
-	      temp
+	      "h4",
+	      { className: "text-center" },
+	      React.createElement(
+	        "b",
+	        null,
+	        temp
+	      )
 	    )
 	  );
 	};
@@ -26307,13 +26299,13 @@
 	    null,
 	    React.createElement(
 	      "h3",
-	      null,
-	      "About"
+	      { className: "text-center" },
+	      "About the React Weather Site"
 	    ),
 	    React.createElement(
 	      "p",
 	      null,
-	      "Welcome to the About page"
+	      "This is a website that I built using the Udemy class on React javascript."
 	    )
 	  );
 	};
