@@ -23,6 +23,11 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
     "babel-preset-stage-3": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "foundation-sites": "^6.2.1",
+    "jquery": "^2.2.4",
+    "script-loader": "^0.7.0",
+    "style-loader": "^0.13.1",
     "webpack": "^1.12.13"
   }
 }
